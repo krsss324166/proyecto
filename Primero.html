@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Primero Sección A</h1>
+    <button onclick="location.href='index.html'">Volver</button>
+
+    <h2 style="text-align: center;">Agregar Calificaciones</h2>
+
+    <form id="calificacionForm">
+        <input type="text" id="nombre" placeholder="Nombre del estudiante" required>
+        <input type="text" id="materia" placeholder="Materia" required>
+        <input type="number" id="calificacion" placeholder="Calificación" required>
+        <button type="button" onclick="agregarCalificacion()">Agregar</button>
+    </form>
+
+    <table border="1">
+        <thead>
+          <tr style="background-color: blue; color: white;">
+            <th>Nombre</th>
+            <th>Materia</th>
+            <th>Calificación</th>
+          </tr>
+        </thead>
+        <tbody id="miTabla"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
